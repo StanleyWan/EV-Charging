@@ -162,3 +162,13 @@ To evaluate the models, I used three complementary metrics:
 - Across all models, the inclusion of **cost** consistently improved predictive power, reinforcing its role as the primary driver of charging behavior.  
 
 The final chosen model, Logistic Regression, provides high accuracy and F1 while remaining interpretable—an important factor for business stakeholders seeking to understand what drives EV user behavior.  
+
+## 7. Summary of Findings  
+
+In this project, EV drivers were classified into three categories based on how much of their battery was charged in a single session:  
+- **Casual Driver:** charges less than 20% of the battery.  
+- **Commuter:** charges between 20% and 60%.  
+- **Long-Distance Driver:** charges more than 60%.  
+
+The analysis showed that charging behavior is influenced by multiple factors, including **charging station type, time of day, and weekday vs. weekend patterns**. However, the most important finding is that **charging cost is the dominant predictor**. Models trained with cost significantly outperformed those without it, providing strong evidence that vendor packages, discounts, and subscriptions play a central role in shaping charging behavior.  
+
