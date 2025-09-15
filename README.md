@@ -9,7 +9,7 @@ In order to explore these behaviors more deeply, I built a machine learning mode
 
 ## Data Undstanding
 
-The [dataset] used in this project was obtained from Kaggle. Although relatively small in size, it is complete — there are no missing values — which makes it convenient for exploratory analysis and model building. At first glance the data seems messy, but in fact this reflects real-world EV charging behavior rather than flaws in the dataset itself.
+The [dataset](https://github.com/StanleyWan/EV-Charging/blob/main/data/Global_EV_Charging_Behavior_2024.csv) used in this project was obtained from Kaggle. Although relatively small in size, it is complete — there are no missing values — which makes it convenient for exploratory analysis and model building. At first glance the data seems messy, but in fact this reflects real-world EV charging behavior rather than flaws in the dataset itself.
 For example, one might assume that more energy delivered always means higher cost. However, the first graph (Cost vs. Energy Delivered) shows very high variance: at the same cost level, some drivers receive far more energy than others. This is a result of vendor incentive plans, such as free or discounted charging packages.
 Similarly, one might expect that longer duration means more energy charged. But the second graph (Duration vs. Energy Delivered) shows that many sessions with long durations actually delivered little energy. This reflects idle charging sessions, vehicle limitations, or charger speed constraints.
 Finally, the third graph (Charging Outcome Counts) shows that about one third of charging sessions ended in failure or were aborted. Rather than machine error, this often comes from user inattention or misoperation.
