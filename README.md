@@ -9,7 +9,7 @@ At its heart, this study is not about the cars—it is about the people. What mo
 
 To explore these behaviors, I built a machine learning model to classify charging sessions into these user types. The analysis and results are documented in [ev_charging_final_V2.ipynb](https://github.com/StanleyWan/EV-Charging/blob/main/ev_charging_final_V2.ipynb), which shows how data can reveal the hidden patterns behind everyday charging choices.
 
-2. Business Understanding
+## 2. Business Understanding
 
 Before diving into data, it is critical to first understand the business context. Without understanding how EV charging services are provided, data alone can be misleading. At first glance, we might assume:
 
