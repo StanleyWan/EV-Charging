@@ -20,6 +20,7 @@ Before diving into data, it is critical to first understand the business context
 However, these assumptions do not always hold true. Vendors often design pricing packages, discounts, or subscription schemes that distort the direct link between cost and energy. Drivers may leave cars idle at the charger, making duration a poor predictor of energy delivered. And failures are not always technical problems; many are caused by human inattention or misoperation.  
 
 The graphs from our preliminary analysis reinforce these insights:
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/cost%20vs%20energy%20(1).png" width="600"/><br>
   <em>Figure: Cost vs Energy Delivered</em>
@@ -29,6 +30,7 @@ Figure Cost vs Energy Delivered: shows Cost and energy delivered are related, bu
 
  
   
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/duration_vs_energy_by_station_type.png" width="600"/><br>
   <em>Figure: Duration vs Energy Delivered</em>
@@ -38,6 +40,7 @@ Figure 2: Duration as Energy Delivered:  shows little relationship with energy d
 
 
   
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/outcome_counts.png" width="600"/><br>
   <em>Figure: Outcome Counts</em>
