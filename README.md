@@ -32,8 +32,10 @@ shows it could be unrelated. Many sessions with long durations actually delivere
 
 Finally, the third graph (Charging Outcome Counts),  
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/outcome_counts.png" width="600"/><br>
+  <em>Figure: Cost vs Energy Delivered</em>
+</p>
 
-
-
-shows that about one third of charging sessions ended in failure or were aborted. Rather than machine error, this often comes from user inattention or misoperation.
+it shows that about one third of charging sessions ended in failure or were aborted. Rather than machine error, this often comes from user inattention or misoperation.
 Together, these observations highlight that EV charging behavior is complex, shaped not just by technical limits but also by human choices and vendor policies
