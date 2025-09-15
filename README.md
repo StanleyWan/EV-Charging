@@ -15,11 +15,11 @@ The [dataset](https://github.com/StanleyWan/EV-Charging/blob/main/data/Global_EV
 
 For example, one might assume that more energy delivered always means higher cost. However, the graph (Cost vs. Energy Delivered), 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/StanleyWan/Bank/main/images/target_distribution.png" width="600"/><br>
-  <em>Figure: Term Deposit Distribution</em>
+  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/cost%20vs%20energy%20(1).png" width="600"/><br>
+  <em>Figure: Cost vs Energy Delivered</em>
 </p>
 
-
+https://github.com/StanleyWan/EV-Charging/blob/main/images/cost%20vs%20energy%20(1).png
 shows very high variance: at the same cost level, some drivers receive far more energy than others. This is a result of vendor incentive plans, such as free or discounted charging packages.
 Similarly, one might expect that longer duration means more energy charged. But the second graph (Duration vs. Energy Delivered) shows that many sessions with long durations actually delivered little energy. This reflects idle charging sessions, vehicle limitations, or charger speed constraints.
 Finally, the third graph (Charging Outcome Counts) shows that about one third of charging sessions ended in failure or were aborted. Rather than machine error, this often comes from user inattention or misoperation.
