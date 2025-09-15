@@ -25,19 +25,22 @@ The graphs from our preliminary analysis reinforce these insights:
   <em>Figure: Cost vs Energy Delivered</em>
 </p>
 Figure Cost vs Energy Delivered: shows Cost and energy delivered are related, but the variance is large, distorting price as a predictor.  
-< >< >
+< >< >  
+  
 <p align="center">
   <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/duration_vs_energy_by_station_type.png" width="600"/><br>
   <em>Figure: Duration vs Energy Delivered</em>
 </p>
 Figure 2: Duration as Energy Delivered:  shows little relationship with energy delivered, reflecting idle time or station type.  
-< >< > 
+< >< >  
+  
 <p align="center">
   <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/outcome_counts.png" width="600"/><br>
   <em>Figure: Outcome Counts</em>
 </p>
 Figure Outcome Counts: Failed sessions are common and should be considered normal in usage data, not evidence of poor equipment.  
-< >< >
+< >< >  
+  
 These findings confirm that simple assumptions are insufficient. To truly understand charging behavior, we need to capture underlying patterns of human decision-making. That is why classification modeling—categorizing drivers into Casual, Commuter, and Long-Distance types—offers a strong approach to this project.  
 
 
