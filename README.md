@@ -62,7 +62,7 @@ The dataset used in this project is **Global_EV_Charging_Behavior_2024**, downlo
 ### Label creation (UserType)  
 - < 20% SOC → *Casual Driver*  
 - 20–60% SOC → *Commuter*  
--  > 60% SOC → *Long-Distance Traveler*  
+- > 60% SOC → *Long-Distance Traveler*  
 
 ### Early observations  
 - **Cost vs. Energy:** Related but highly variable, distorted by discounts and subscriptions.  
