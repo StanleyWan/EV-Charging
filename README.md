@@ -69,3 +69,33 @@ The dataset used in this project is [Global_EV_Charging_Behavior_2024](https://g
 - **Duration vs. Energy:** Weak relationship; long sessions often reflect idle time.  
 - **Session outcomes:** Over 30% end in failure or abort, often due to user behavior rather than machine faults.  
 
+## 4. Data Preprocessing / Preparation  
+
+To prepare the dataset for modeling, several preprocessing steps were applied. The goal was to ensure data quality, avoid data leakage, and transform features into a format suitable for machine learning.  
+
+### a. Cleaning and handling inconsistencies  
+- The dataset contained **no missing values**, which reduced the need for imputation.  
+- Redundant or leakage-prone features were dropped, including:  
+  - **Energy Delivered (kWh):** used only for labeling user type.  
+  - **SOC Change (%):** derived from energy delivered and capacity.  
+  - **Charging Duration (mins):** highly correlated with energy delivered and station type.  
+  - **Charge Rate (kW):** redundant with station type.  
+- Outliers were reviewed through exploratory analysis (e.g., unusually high cost or duration values). These were retained to preserve real-world variance.  
+
+### b. Train-test split  
+- The dataset was split into **80% training** and **20% testing**.  
+- Stratification was applied on the **UserType** target to maintain class balance in both sets.  
+
+### c. Feature engineering and encoding  
+- **Derived features:**  
+  - *TimeOfDay* (Morning, Office Hours, Evening, Night, Deep Night) from start time.  
+  - *DayType* (Weekday / Weekend) from day of week.  
+  - *Cost per kWh* to capture cost efficiency, based on session cost and energy delivered.  
+- **Target variable:**  
+  - *UserType* created from SOC% change thresholds (<20% Casual, 20–60% Commuter, >60% Long-Distance).  
+- **Encoding:**  
+  - Numerical features (e.g., Charging Cost, Battery Capacity) scaled with **StandardScaler**.  
+  - Categorical features (Station Type, TimeOfDay, DayType, Payment Method) transformed using **One-Hot Encoding**.  
+- **Pipeline approach:** All transformations were built into a **ColumnTransformer** inside a Scikit-learn pipeline, ensuring consistent application during both training and testing.  
+
+Overall, these steps ensured that the dataset was clean, non-leaky, and properly structured for classification modeling.  
