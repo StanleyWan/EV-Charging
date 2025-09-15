@@ -7,7 +7,7 @@ This raises an important question: how do people actually use charging stations,
 
 At its heart, this study is not about the cars—it is about the people. What motivates them to charge fully or partially? How do cost, time of day, battery size, or station type influence their decisions? These are the questions guiding my capstone project.
 
-To explore these behaviors, I built a machine learning model to classify charging sessions into these user types. The analysis and results are documented in [ev_charging_final_V2.ipynb], which shows how data can reveal the hidden patterns behind everyday charging choices.
+To explore these behaviors, I built a machine learning model to classify charging sessions into these user types. The analysis and results are documented in [ev_charging_final_V2.ipynb](https://github.com/StanleyWan/EV-Charging/blob/main/ev_charging_final_V2.ipynb), which shows how data can reveal the hidden patterns behind everyday charging choices.
 
 ## Data Undstanding
 
