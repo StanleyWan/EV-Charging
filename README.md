@@ -134,3 +134,31 @@ All models were trained within a **Scikit-learn pipeline** that included:
 
 ### Rationale  
 By starting with baselines and then testing multiple algorithms, I ensured the analysis identified both the **most important driver of behavior (cost)** and the **most effective model**. This balanced approach combined interpretability (Logistic Regression, Decision Tree) with strong performance (SVM), ensuring the final results are both accurate and explainable in a business context.  
+
+## 6. Model Evaluation  
+
+To evaluate the models, I used three complementary metrics:  
+
+- **Accuracy:** Overall proportion of correctly classified sessions.  
+- **Macro F1-score:** Balances precision and recall across all three user types (Casual, Commuter, Long-Distance).  
+- **Macro AUC (OvR):** Measures overall ability to distinguish between classes using probability estimates.  
+
+### Baseline results  
+- **Without cost:** Accuracy and F1 were noticeably lower.  
+- **With cost:** Both metrics improved significantly, confirming that **cost is a critical feature** for modeling charging behavior.  
+
+### Final model performance (test set)  
+| Model                | Accuracy | Macro F1 | Macro AUC (OvR) |
+|----------------------|----------|----------|-----------------|
+| Logistic Regression  | 0.913    | 0.916    | 0.977           |
+| Support Vector Machine (SVM) | 0.894    | 0.880    | 0.981           |
+| Decision Tree        | 0.838    | 0.848    | 0.900           |
+| KNN (excluded)       | 0.688    | 0.651    | 0.720           |
+
+### Key takeaways  
+- Logistic Regression and SVM both performed strongly, with **Logistic Regression selected as the final model** due to its balance of performance and interpretability.  
+- Decision Tree offered insights into feature importance but underperformed compared to other models.  
+- KNN consistently lagged in both accuracy and stability, so it was excluded from further analysis.  
+- Across all models, the inclusion of **cost** consistently improved predictive power, reinforcing its role as the primary driver of charging behavior.  
+
+The final chosen model, Logistic Regression, provides high accuracy and F1 while remaining interpretable—an important factor for business stakeholders seeking to understand what drives EV user behavior.  
