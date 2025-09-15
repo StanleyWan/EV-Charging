@@ -25,53 +25,29 @@ The graphs from our preliminary analysis reinforce these insights:
   <em>Figure: Cost vs Energy Delivered</em>
 </p>
 Figure Cost vs Energy Delivered: shows Cost and energy delivered are related, but the variance is large, distorting price as a predictor.  
-< >< >  
+
+
+ 
   
 <p align="center">
   <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/duration_vs_energy_by_station_type.png" width="600"/><br>
   <em>Figure: Duration vs Energy Delivered</em>
 </p>
 Figure 2: Duration as Energy Delivered:  shows little relationship with energy delivered, reflecting idle time or station type.  
-< >< >  
+
+
+
   
 <p align="center">
   <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/outcome_counts.png" width="600"/><br>
   <em>Figure: Outcome Counts</em>
 </p>
 Figure Outcome Counts: Failed sessions are common and should be considered normal in usage data, not evidence of poor equipment.  
-< >< >  
+
+
+ 
   
 These findings confirm that simple assumptions are insufficient. To truly understand charging behavior, we need to capture underlying patterns of human decision-making. That is why classification modeling—categorizing drivers into Casual, Commuter, and Long-Distance types—offers a strong approach to this project.  
 
 
 
-## Data Undstanding
-
-The [dataset](https://github.com/StanleyWan/EV-Charging/blob/main/data/Global_EV_Charging_Behavior_2024.csv) used in this project was obtained from [Kaggle](https://www.kaggle.com/datasets/atharvasoundankar/global-ev-charging-behavior-2024). Although relatively small in size, it is complete — there are no missing values — which makes it convenient for exploratory analysis and model building. At first glance the data seems messy, but in fact this reflects real-world EV charging behavior rather than flaws in the dataset itself.  
-
-For example, one might assume that more energy delivered always means higher cost. However, the graph (Cost vs. Energy Delivered),   
-<p align="left">
-  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/cost%20vs%20energy%20(1).png" width="600"/><br>
-  <em>Figure: Cost vs Energy Delivered</em>
-</p>
-
-it shows very high variance: at the same cost level, some drivers receive far more energy than others. This is a result of vendor incentive plans, such as free or discounted charging packages.  
-
-Similarly, one might expect that longer duration means more energy charged. But the second graph (Duration vs. Energy Delivered),
-
-<p align="left">
-  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/duration_vs_energy_by_station_type.png" width="600"/><br>
-  <em>Figure: Cost vs Energy Delivered</em>
-</p>
-
-shows it could be unrelated. Many sessions with long durations actually delivered little energy. This reflects idle charging sessions, vehicle limitations, or charger speed constraints.  
-
-Finally, the third graph (Charging Outcome Counts),  
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/outcome_counts.png" width="600"/><br>
-  <em>Figure: Cost vs Energy Delivered</em>
-</p>
-
-it shows that about one third of charging sessions ended in failure or were aborted. Rather than machine error, this often comes from user inattention or misoperation.
-Together, these observations highlight that EV charging behavior is complex, shaped not just by technical limits but also by human choices and vendor policies
