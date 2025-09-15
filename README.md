@@ -78,7 +78,9 @@ To prepare the dataset for modeling, several preprocessing steps were applied. T
 - Redundant or leakage-prone features were dropped, including:  
   - **Energy Delivered (kWh):** used only for labeling user type.  
   - **SOC Change (%):** derived from energy delivered and capacity.  
-  - **Charging Duration (mins):** highly correlated with energy delivered and station type.  
+  - **Charging Duration (mins):** dropped because it does not reliably correlate with energy delivered. 
+  Long durations often reflect idle time or user inattention rather than actual charging behavior, 
+  making it a misleading feature. 
   - **Charge Rate (kW):** redundant with station type.  
 - Outliers were reviewed through exploratory analysis (e.g., unusually high cost or duration values). These were retained to preserve real-world variance.  
 
