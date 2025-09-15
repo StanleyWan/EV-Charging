@@ -178,9 +178,14 @@ The final chosen model, Logistic Regression, provides high accuracy and F1 while
 ## 7. Summary of Findings  
 
 In this project, EV drivers were classified into three categories based on how much of their battery was charged in a single session:  
-- **Casual Driver:** charges less than 20% of the battery.  
-- **Commuter:** charges between 20% and 60%.  
-- **Long-Distance Driver:** charges more than 60%.  
+- **Casual Driver:** charges less than 20% of the battery capacity.  
+- **Commuter:** charges between 20% and 60% of the battery capacity.  
+- **Long-Distance Driver:** charges more than 60% of the battery capacity.  
 
 The analysis showed that charging behavior is influenced by multiple factors, including **charging station type, time of day, and weekday vs. weekend patterns**. However, the most important finding is that **charging cost is the dominant predictor**. Models trained with cost significantly outperformed those without it, providing strong evidence that vendor packages, discounts, and subscriptions play a central role in shaping charging behavior.  
 
+## 8. Conclusion  
+
+The results confirm that EV charging is not only a technical process but also an economic and human one. While battery size and station type matter, **pricing incentives and user habits are the strongest drivers of behavior**. Casual drivers often “top up” only a little, commuters balance convenience and cost, and long-distance drivers fully recharge to maximize range.  
+
+This insight is valuable for city planners, EV vendors, and charging providers: understanding human charging behavior can reduce strain on stations, improve customer satisfaction, and guide smarter infrastructure investment.  
