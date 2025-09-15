@@ -147,7 +147,7 @@ To evaluate the models, I used three complementary metrics:
 - **Without cost:** Accuracy and F1 were noticeably lower.  
 - **With cost:** Both metrics improved significantly, confirming that **cost is a critical feature** for modeling charging behavior.
 
-  ### Baseline model comparison  
+### Baseline model comparison  
 
 | Metric       | Without Cost | With Cost |
 |--------------|--------------|-----------|
