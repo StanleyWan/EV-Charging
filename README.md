@@ -21,18 +21,18 @@ However, these assumptions do not always hold true. Vendors often design pricing
 
 The graphs from our preliminary analysis reinforce these insights:
 <p align="center">
-  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/cost%20vs%20energy%20(1).png" width="200"/><br>
+  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/cost%20vs%20energy%20(1).png" width="400"/><br>
   <em>Figure: Cost vs Energy Delivered</em>
 </p>
 Figure Cost vs Energy: Cost and energy delivered are related, but the variance is large, distorting price as a predictor.
 --------------------------------------
-<p align="left">
-  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/duration_vs_energy_by_station_type.png" width="200"/><br>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/duration_vs_energy_by_station_type.png" width="400"/><br>
   <em>Figure: Duration vs Energy Delivered</em>
 </p>
 Figure 2: Charging duration shows little relationship with energy delivered, reflecting idle time or station type.
 <p align="center">
-  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/outcome_counts.png" width="600"/><br>
+  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/outcome_counts.png" width="400"/><br>
   <em>Figure: Outcome Counts</em>
 </p>
 Figure Outcome Counts: Failed sessions are common and should be considered normal in usage data, not evidence of poor equipment.
