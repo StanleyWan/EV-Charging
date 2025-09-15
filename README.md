@@ -43,7 +43,7 @@ These findings confirm that simple assumptions are insufficient. To truly unders
 
 ## 2. Data Understanding  
 
-The dataset used in this project is **Global_EV_Charging_Behavior_2024**, downloaded from Kaggle. It contains ~800 rows × 16 columns, with each row representing one EV charging session. The data is small in size but clean — there are no missing values — and it provides a realistic picture of charging patterns across different regions.  
+The dataset used in this project is [Global_EV_Charging_Behavior_2024](https://github.com/StanleyWan/EV-Charging/blob/main/data/Global_EV_Charging_Behavior_2024.csv), downloaded from Kaggle. It contains ~800 rows × 16 columns, with each row representing one EV charging session. The data is small in size but clean — there are no missing values — and it provides a realistic picture of charging patterns across different regions.  
 
 ### Key characteristics  
 - **Size:** ~800 sessions, 16 attributes  
