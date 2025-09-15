@@ -24,7 +24,7 @@ it shows very high variance: at the same cost level, some drivers receive far mo
 Similarly, one might expect that longer duration means more energy charged. But the second graph (Duration vs. Energy Delivered),
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/cost%20vs%20energy%20(1).png" width="600"/><br>
+  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/duration_vs_energy_by_station_type.png" width="600"/><br>
   <em>Figure: Cost vs Energy Delivered</em>
 </p>
 
