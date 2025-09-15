@@ -101,3 +101,36 @@ To prepare the dataset for modeling, several preprocessing steps were applied. T
 - **Pipeline approach:** All transformations were built into a **ColumnTransformer** inside a Scikit-learn pipeline, ensuring consistent application during both training and testing.  
 
 Overall, these steps ensured that the dataset was clean, non-leaky, and properly structured for classification modeling.  
+
+## 5. Modeling  
+
+The goal of this project is to classify EV charging sessions into **Casual Driver, Commuter, or Long-Distance Driver** categories based on behavioral features. To achieve this, I began with simple baselines and then evaluated multiple supervised classification algorithms.  
+
+### Baseline modeling  
+Before training advanced models, I built baseline classifiers to test the influence of **charging cost**:  
+- **Baseline 1:** Model trained without cost-related features.  
+- **Baseline 2:** Model trained with cost included.  
+
+The comparison showed a clear improvement in predictive performance when cost was included, confirming that **charging cost is a key driver of user behavior**. This reflects the business reality that many vendors provide free sessions, discounts, or subscription packages, which strongly influence charging decisions.  
+
+### Candidate models  
+- **Logistic Regression (One-vs-Rest):**  
+  Selected as a baseline supervised model. It is interpretable, relatively fast to train, and provides probability estimates that can be evaluated with ROC curves and AUC metrics.  
+
+- **Support Vector Machine (SVM):**  
+  Effective for high-dimensional feature spaces created by one-hot encoding. Kernel tuning allowed the model to capture nonlinear relationships in the data.  
+
+- **Decision Tree:**  
+  Offers interpretability and feature importance, useful for understanding what drives user classifications. Overfitting was controlled with pruning parameters (`ccp_alpha`, max depth).  
+
+- **K-Nearest Neighbors (KNN):**  
+  Tested as a non-parametric method. Results were weaker compared to other models, so KNN was excluded from the final recommendation.  
+
+### Pipeline setup  
+All models were trained within a **Scikit-learn pipeline** that included:  
+1. Scaling of numerical features (e.g., cost, battery capacity).  
+2. One-hot encoding of categorical features (e.g., station type, time of day, day type).  
+3. Cross-validation with **GridSearchCV** for hyperparameter tuning.  
+
+### Rationale  
+By starting with baselines and then testing multiple algorithms, I ensured the analysis identified both the **most important driver of behavior (cost)** and the **most effective model**. This balanced approach combined interpretability (Logistic Regression, Decision Tree) with strong performance (SVM), ensuring the final results are both accurate and explainable in a business context.  
