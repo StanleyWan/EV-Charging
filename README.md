@@ -189,3 +189,12 @@ The analysis showed that charging behavior is influenced by multiple factors, in
 The results confirm that EV charging is not only a technical process but also an economic and human one. While battery size and station type matter, **pricing incentives and user habits are the strongest drivers of behavior**. Casual drivers often “top up” only a little, commuters balance convenience and cost, and long-distance drivers fully recharge to maximize range.  
 
 This insight is valuable for city planners, EV vendors, and charging providers: understanding human charging behavior can reduce strain on stations, improve customer satisfaction, and guide smarter infrastructure investment.  
+
+## 9. Next Steps / Future Work  
+
+- **Expand the dataset:** Incorporate more sessions and data sources to improve generalizability.  
+- **Include external features:** Such as trip distance, geographic distribution of stations, or user demographics.  
+- **Study pricing packages explicitly:** Vendor plans strongly affect behavior, but detailed package data was not available in this dataset.  
+- **Explore unsupervised methods:** Clustering may reveal hidden user patterns beyond the predefined categories.  
+
+By continuing this work, future research can provide deeper insights into the interaction between human behavior, vendor incentives, and charging infrastructure.  
