@@ -28,6 +28,12 @@ Similarly, one might expect that longer duration means more energy charged. But 
   <em>Figure: Cost vs Energy Delivered</em>
 </p>
 
-shows that many sessions with long durations actually delivered little energy. This reflects idle charging sessions, vehicle limitations, or charger speed constraints.
-Finally, the third graph (Charging Outcome Counts) shows that about one third of charging sessions ended in failure or were aborted. Rather than machine error, this often comes from user inattention or misoperation.
+shows it could be unrelated. Many sessions with long durations actually delivered little energy. This reflects idle charging sessions, vehicle limitations, or charger speed constraints.  
+
+Finally, the third graph (Charging Outcome Counts),  
+
+
+
+
+shows that about one third of charging sessions ended in failure or were aborted. Rather than machine error, this often comes from user inattention or misoperation.
 Together, these observations highlight that EV charging behavior is complex, shaped not just by technical limits but also by human choices and vendor policies
