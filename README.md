@@ -145,7 +145,19 @@ To evaluate the models, I used three complementary metrics:
 
 ### Baseline results  
 - **Without cost:** Accuracy and F1 were noticeably lower.  
-- **With cost:** Both metrics improved significantly, confirming that **cost is a critical feature** for modeling charging behavior.  
+- **With cost:** Both metrics improved significantly, confirming that **cost is a critical feature** for modeling charging behavior.
+
+  ### Baseline model comparison  
+
+| Metric       | Without Cost | With Cost |
+|--------------|--------------|-----------|
+| **Accuracy** | 0.450        | 0.850     |
+| **Macro F1** | 0.311        | 0.812     |
+| **Casual – Precision / Recall / F1** | 0.00 / 0.00 / 0.00 | 0.87 / 0.59 / 0.70 |
+| **Commuter – Precision / Recall / F1** | 0.41 / 0.35 / 0.38 | 0.82 / 0.82 / 0.82 |
+| **Long-Distance – Precision / Recall / F1** | 0.47 / 0.68 / 0.56 | 0.87 / 0.96 / 0.91 |
+
+**Key takeaway:** Including cost increases accuracy from **45% → 85%** and Macro-F1 from **0.31 → 0.81**. This confirms that **charging cost is the single most important predictor of EV charging behavior.**  
 
 ### Final model performance (test set)  
 | Model                | Accuracy | Macro F1 | Macro AUC (OvR) |
