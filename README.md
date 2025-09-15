@@ -41,5 +41,31 @@ The graphs from our preliminary analysis reinforce these insights:
 
 These findings confirm that simple assumptions are insufficient. To truly understand charging behavior, we need to capture underlying patterns of human decision-making. That is why classification modeling—categorizing drivers into Casual, Commuter, and Long-Distance types—offers a strong approach to this project.  
 
+## 2. Data Understanding  
 
+The dataset used in this project is **Global_EV_Charging_Behavior_2024**, downloaded from Kaggle. It contains ~800 rows × 16 columns, with each row representing one EV charging session. The data is small in size but clean — there are no missing values — and it provides a realistic picture of charging patterns across different regions.  
+
+### Key characteristics  
+- **Size:** ~800 sessions, 16 attributes  
+- **Scope:** Global, reflecting diverse charging environments  
+- **Granularity:** Session-level data, one row per charging session  
+
+### Important columns used  
+- **Charging Start Time:** Timestamp, used to derive *Time of Day* and *Day Type*.  
+- **Battery Capacity (kWh):** Vehicle’s full battery size, baseline for SOC (state of charge).  
+- **Energy Delivered (kWh):** Actual energy charged; used for labeling but excluded as a feature.  
+- **Charging Cost ($):** Session cost, shaped by vendor packages and incentives.  
+- **Payment Method:** {Subscription, Card, App}; proxy for billing structure and package plans.  
+- **Charging Station Type:** {Level 1, Level 2, DC Fast}; reflects charging speed and user patience.  
+- **Session Outcome:** Complete / Abort / Fail; excluded since energy delivered already reflects results.  
+
+### Label creation (UserType)  
+- < 20% SOC → *Casual Driver*  
+- 20–60% SOC → *Commuter*  
+- > 60% SOC → *Long-Distance Traveler*  
+
+### Early observations  
+- **Cost vs. Energy:** Related but highly variable, distorted by discounts and subscriptions.  
+- **Duration vs. Energy:** Weak relationship; long sessions often reflect idle time.  
+- **Session outcomes:** Over 30% end in failure or abort, often due to user behavior rather than machine faults.  
 
