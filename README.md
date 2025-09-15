@@ -13,9 +13,9 @@ To explore these behaviors, I built a machine learning model to classify chargin
 
 Before diving into data, it is critical to first understand the business context. Without understanding how EV charging services are provided, data alone can be misleading. At first glance, we might assume:
 
-Cost is directly proportional to energy delivered.  
-Longer charging duration means more energy delivered.
-High failure rates must reflect poor charger quality.  
+- Cost is directly proportional to energy delivered.  
+- Longer charging duration means more energy delivered.
+- High failure rates must reflect poor charger quality.  
 
 However, these assumptions do not always hold true. Vendors often design pricing packages, discounts, or subscription schemes that distort the direct link between cost and energy. Drivers may leave cars idle at the charger, making duration a poor predictor of energy delivered. And failures are not always technical problems; many are caused by human inattention or misoperation.  
 
@@ -25,20 +25,20 @@ The graphs from our preliminary analysis reinforce these insights:
   <em>Figure: Cost vs Energy Delivered</em>
 </p>
 Figure Cost vs Energy Delivered: shows Cost and energy delivered are related, but the variance is large, distorting price as a predictor.  
-
+&&
 <p align="center">
   <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/duration_vs_energy_by_station_type.png" width="600"/><br>
   <em>Figure: Duration vs Energy Delivered</em>
 </p>
 Figure 2: Duration as Energy Delivered:  shows little relationship with energy delivered, reflecting idle time or station type.  
-
+&& 
 <p align="center">
   <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging/main/images/outcome_counts.png" width="600"/><br>
   <em>Figure: Outcome Counts</em>
 </p>
 Figure Outcome Counts: Failed sessions are common and should be considered normal in usage data, not evidence of poor equipment.  
-
-These findings confirm that simple assumptions are insufficient. To truly understand charging behavior, we need to capture underlying patterns of human decision-making. That is why classification modeling—categorizing drivers into Casual, Commuter, and Long-Distance types—offers a strong approach to this project.
+&&
+These findings confirm that simple assumptions are insufficient. To truly understand charging behavior, we need to capture underlying patterns of human decision-making. That is why classification modeling—categorizing drivers into Casual, Commuter, and Long-Distance types—offers a strong approach to this project.  
 
 
 
